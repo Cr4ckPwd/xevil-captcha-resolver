@@ -1,6 +1,6 @@
 import requests
 import time
-
+#API key and site key
 api_key = '2b8c9292ea263ff1479ca8fef38f9d6f'
 site_key = '6LfD3PIbAAAAAJs_eEHvoOl75_83eXSqpPSRFJ_u'
 page_url = 'https://rucaptcha.com/demo/recaptcha-v2'
