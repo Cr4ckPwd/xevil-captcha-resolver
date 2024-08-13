@@ -8,7 +8,7 @@ page_url = 'https://rucaptcha.com/demo/recaptcha-v2'
 def solve_recaptcha():
 	try:
 		# Create task
-		create_task_url = "http://api.antigate.com/createTask"
+		create_task_url = "http://api.2captcha.com/createTask"
 		create_task_payload = {
 			"clientKey": api_key,
 			"task": {
@@ -28,7 +28,7 @@ def solve_recaptcha():
 		task_id = create_task_data["taskId"]
 
 		# Get task result
-		get_task_result_url = "http://api.antigate.com/getTaskResult"
+		get_task_result_url = "http://api.2captcha.com/getTaskResult"
 		get_task_result_payload = {
 			"clientKey": api_key,
 			"taskId": task_id
