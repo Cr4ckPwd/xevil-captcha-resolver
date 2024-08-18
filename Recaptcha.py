@@ -2,13 +2,13 @@ import requests
 import time
 #API key and site key
 api_key = '2b8c9292ea263ff1479ca8fef38f9d6f'
-site_key = '6LfD3PIbAAAAAJs_eEHvoOl75_83eXSqpPSRFJ_u'
-page_url = 'https://rucaptcha.com/demo/recaptcha-v2'
+site_key = 'Data-sitekey'
+page_url = 'Page-url'
 
 def solve_recaptcha():
 	try:
 		# Create task
-		create_task_url = "http://api.2captcha.com/createTask"
+		create_task_url = "http://api.pushon.me/createTask"
 		create_task_payload = {
 			"clientKey": api_key,
 			"task": {
@@ -28,7 +28,7 @@ def solve_recaptcha():
 		task_id = create_task_data["taskId"]
 
 		# Get task result
-		get_task_result_url = "http://api.2captcha.com/getTaskResult"
+		get_task_result_url = "http://api.pushon.me/getTaskResult"
 		get_task_result_payload = {
 			"clientKey": api_key,
 			"taskId": task_id
