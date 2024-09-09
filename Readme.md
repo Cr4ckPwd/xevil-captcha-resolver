@@ -20,4 +20,3 @@ To ensure that your requests to `api.2captcha.com` are correctly routed, you may
    Add the following line to the end of the file:
 
 This guide explains how to use the Recaptcha v2 API with 2Captcha and how to modify the hosts file on a Windows machine.
-![alt text](image.png)
